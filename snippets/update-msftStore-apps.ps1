@@ -1,0 +1,1 @@
+Get-AppxPackage -AllUsers | foreach { if (!($_.IsFramework -or $_.PublisherId -eq "cw5n1h2txyewy")) { $_ } } | % { write-host "Updating $($_.Name)..."; Get-AppxPackage -name $_.PackageFullName | Foreach { Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml" -verbose}}
