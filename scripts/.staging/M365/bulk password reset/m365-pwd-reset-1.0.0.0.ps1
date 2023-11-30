@@ -1,9 +1,15 @@
 
 # Define the path to the CSV file containing the list of user UPNs and new passwords
-$csvFilePath = "C:\path\to\userlist.csv"
+$csvFilePath = ".\logistics-users.csv"
 
 # Define the path to the CSV file where the results will be logged
 $logFilePath = "C:\path\to\password_reset_log.csv"
+
+# Check if the log file path exists
+if (-not (Test-Path -Path $logFilePath)) {
+    # Create the log file
+    $null = New-Item -Path $logFilePath -ItemType File
+}
 
 # Load the user UPNs and new passwords from the CSV file
 $userData = Import-Csv -Path $csvFilePath
