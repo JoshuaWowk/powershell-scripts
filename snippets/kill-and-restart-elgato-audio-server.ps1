@@ -24,5 +24,5 @@ if ($serverProcess) {
 }
 
 # Start the watcher process
-$watcherPath = Join-Path -Path $installationPath -ChildPath $watcherProcessName
+$watcherPath = "C:\Program Files\Elgato\Volume Controller\ElgatoAudioControlServerWatcher.exe"
 Start-Process -FilePath $watcherPath -NoNewWindow
