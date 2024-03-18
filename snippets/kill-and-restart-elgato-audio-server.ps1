@@ -12,13 +12,13 @@ if (-not (Test-Path -Path $logFilePath)) {
 Start-Transcript -Path $logFilePath -Append -Force
 
 # Kill the watcher process
-$watcherProcess = Get-Process -Name $watcherProcessName -ErrorAction SilentlyContinue
+$watcherProcess = Get-Process -Name $watcherProcessName #-ErrorAction SilentlyContinue
 if ($watcherProcess) {
     $watcherProcess | Stop-Process -Force
 }
 
 # Kill the server process
-$serverProcess = Get-Process -Name $serverProcessName -ErrorAction SilentlyContinue
+$serverProcess = Get-Process -Name $serverProcessName #-ErrorAction SilentlyContinue
 if ($serverProcess) {
     $serverProcess | Stop-Process -Force
 }
