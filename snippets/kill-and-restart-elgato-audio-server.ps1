@@ -1,5 +1,5 @@
-$watcherProcessName = "ElgatoAudioControlServerWatcher.exe"
-$serverProcessName = "ElgatoAudioControlServer.exe"
+$watcherProcessName = "ElgatoAudioControlServerWatcher"
+$serverProcessName = "ElgatoAudioControlServer"
 $installationPath = "C:\Program Files\Elgato\Volume Controller"
 $logFilePath = Join-Path -Path $installationPath -ChildPath "scriptLog.txt"
 
