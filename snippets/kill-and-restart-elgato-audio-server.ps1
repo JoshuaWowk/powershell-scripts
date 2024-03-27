@@ -1,7 +1,7 @@
 $watcherProcessName = "ElgatoAudioControlServerWatcher"
 $serverProcessName = "ElgatoAudioControlServer"
 $installationPath = "C:\Program Files\Elgato\Volume Controller"
-$logFilePath = Join-Path -Path $installationPath -ChildPath "scriptLog.txt"
+# $logFilePath = Join-Path -Path $installationPath -ChildPath "scriptLog.txt"
 
 # # Check if log file exists, if not create it
 # if (-not (Test-Path -Path $logFilePath)) {
