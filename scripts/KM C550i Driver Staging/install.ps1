@@ -1,0 +1,1 @@
+pnputil.exe /add-driver ".\KOAXCJ__.inf" /install
