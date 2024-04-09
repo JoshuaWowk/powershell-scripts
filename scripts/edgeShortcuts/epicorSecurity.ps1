@@ -5,7 +5,7 @@ $urls = @(
     "https://centralusdtapp52.epicorsaas.com/SaaS5127/Apps/Erp/Home/#/view/ADMN2200/Ice.UI.MenuMEntry?channelid=69f64064-480a-4cc7-b622-580d5e9242cf&layerVersion=0&baseAppVersion=0&company=161830&site=MfgSys"
 )
 
-$edgePath = "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
+$edgePath = "C:\Program Files (x86)\Microsoft\Edge Beta\Application\msedge.exe"
 
 foreach ($url in $urls) {
     Start-Process -FilePath $edgePath -ArgumentList $url
