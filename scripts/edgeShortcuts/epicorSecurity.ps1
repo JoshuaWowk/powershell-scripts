@@ -11,3 +11,5 @@ $edgePath = "C:\Program Files (x86)\Microsoft\Edge Beta\Application\msedge.exe"
 foreach ($url in $urls) {
     Start-Process -FilePath $edgePath -ArgumentList $url
 }
+
+https://centralusdtapp52.epicorsaas.com/SaaS5127/Apps/Erp/Home/#/view/SUMT2000/Ice.UI.MenuMEntry?channelid=d3d0a4d5-db3e-427b-adfd-1ede8ec1be8c&layerVersion=0&baseAppVersion=0&company=161830&site=MfgSys&pageId=MenuMForm
