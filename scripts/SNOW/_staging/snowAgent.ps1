@@ -45,6 +45,4 @@ Start-Sleep -Seconds 5
 
 # Install snowClient.msi and wait for it to complete
 $msiPath = Join-Path -Path $destinationPath -ChildPath "snowClient.msi"
-Start-Process -FilePath msiexec.exe -ArgumentList "/i `"$msiPath`" /q /promptrestart" -Wait
-
-# Continue with the rest of your script here
+Start-Process -FilePath msiexec.exe -ArgumentList "/i `"$msiPath`" /q" -Wait
